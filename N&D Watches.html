@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&D Watchs</title>
+</head> Bienvenue chez N&D Watchs, <br> Le seul site de montres 100% personnalisable
+<body>
+    <h1 name="prix" id=prix> </h1>
+    <form>
+        <fieldset>
+            <legend>cadran</legend>
+            forme : <br>
+            <select name="forme" id="cforme" onchange="changement()"> 
+                <option value="rond"> rond</option>
+                <option value="carré"> carré</option>
+                <option value="autre forme"> autre forme</option>
+            </select><br>
+            
+            taille : <br>
+            <select name="taille" id="ctaille" onchange="changement()"> taille
+                <option value="small"> S</option>
+                <option value="médium"> M</option>
+                <option value="large"> L</option>
+            </select><br>
+
+            couleur : <br>
+            <select name="couleur" id="ccouleur" onchange="changement()"> 
+                <option value="rouge"> rouge</option>
+                <option value="vert"> vert</option>
+                <option value="bleu"> bleu</option>
+            </select><br>
+
+            fond : <br>
+            <select name="fond" id="cfond" onchange="changement()"> 
+                <option value="squelette"> squelette visible</option>
+                <option value="photo"> photo au choix</option>
+                <option value="autre fond"> autre fond</option>
+            </select><br>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>bracelet</legend>
+            forme : <br>
+            <select name="forme" id="bname" onchange="changement()"> 
+                <option value="rond"> rond</option>
+                <option value="carré"> carré</option>
+                <option value="autre forme"> autre forme</option>
+            </select><br>
+        
+            taille : <br>
+            <select name="taille">taille
+                <option value="small"> S</option>
+                <option value="médium"> M</option>
+                <option value="large"> L</option>
+            </select>
+        </fieldset><br>
+        <input type="submit" value="valider">
+    </form>
+<script src="script.js"></script>
+</body>
+</html>

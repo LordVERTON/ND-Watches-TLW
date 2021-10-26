@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&D Watchs</title>
+</head> Bienvenu chez N&D Watchs, <br> Le seul site de montres 100% personnalisables
+<body>
+    <form>
+        <fieldset>
+            <legend>Identité</legend>
+            Prénom :<br>
+            <input type="text" name="firstname"> </br>
+            Nom :<br>
+            <input type="text" name="lastname"> </br> <br>
+        </fieldset> <br>
+
+        <fieldset>
+            <legend>Coordonnées </legend>
+            Numéro de téléphone: <br>
+            <input type="number" name="tel" value="teléphone" checked> </br> <br>
+            
+            Mail: <br> 
+            <input type="email" name="mail"> </br> 
+
+            <fieldset> 
+                <legend>Adresse de facturation</legend>
+                N° de Rue:
+                <input type="number" id="num rue" name="numéro de rue" >
+                Nom de rue:
+                <input type ="text" id="rue" name="rue" >
+                Ville:
+                <input type="text" id="adresse" name="Ville">
+                <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" title="Code postal sur 5  chiffres"> </br> <br>
+            </fieldset>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Livraison</legend>
+            <fieldset> 
+                <legend>Adresse de livraison (si différente de celle de facturation </legend>
+                N° de Rue:
+                <input type="number" id="num rue" name="numéro de rue" >
+                Nom de rue:
+                <input type ="text" id="rue" name="rue" >
+                Ville:
+                <input type="text" id="adresse" name="Ville">
+                <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" title="Code postal sur 5  chiffres"> </br> <br>
+            </fieldset>
+            Date livraison:
+            <input type="date" id="date livraison" name="date de livraison" > </br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Renseignements/commentaires</legend>
+            <input type="text" id="Renseignements">
+        </fieldset>
+        <input type="submit" value="valider">
+        <input type="reset" value="reset">
+    </form>
+</body>
