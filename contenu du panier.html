@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N&D Watchs</title>
-</head> Bienvenu chez N&D Watchs, <br> Le seul site de montres 100% personnalisables
+</head> 
+
 <body>
+    <header id="header">
+        <a href="index.html">
+          <img class="image1" src="logo1.jpg" alt="NS Watch">
+      </a>
+      <h1>Bienvenue chez N&D Watchs</h1> 
+      </header>
+      
     <form>
         <fieldset>
             <legend>Identité</legend>
-            Prénom :<br>
-            <input type="text" name="firstname"> </br>
-            Nom :<br>
-            <input type="text" name="lastname"> </br> <br>
+           <p>Prénom :</p>
+            <input type="text" name="firstname" placeholder="prenom"> </br>
+            <p>Nom :</p>
+            <input type="text" name="lastname" placeholder="nom"> </br> <br>
         </fieldset> <br>
 
         <fieldset>
             <legend>Coordonnées </legend>
-            Numéro de téléphone: <br>
-            <input type="number" name="tel" value="teléphone" checked> </br> <br>
-            
-            Mail: <br> 
-            <input type="email" name="mail"> </br> 
+            <p>Numéro de téléphone:</p> 
+            <input type="tel" name="tel" placeholder="tel"><br>
+            <p>Mail:</p>
+                <input type="email" name="mail" placeholder="mail"> </br> <br>
 
             <fieldset> 
                 <legend>Adresse de facturation</legend>
-                N° de Rue:
-                <input type="number" id="num rue" name="numéro de rue" >
-                Nom de rue:
-                <input type ="text" id="rue" name="rue" >
-                Ville:
-                <input type="text" id="adresse" name="Ville">
-                <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" title="Code postal sur 5  chiffres"> </br> <br>
+               <p> N° de Rue:</p>
+                <input type="number" id="num rue" name="numéro de rue" placeholder="num de rue">
+                <p>Nom de rue:</p>
+                <input type ="text" id="rue" name="rue" placeholder="nom de rue">
+                <p>Ville:</p>
+                <input type="text" id="adresse" name="Ville" placeholder="ville">
+                <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" title="Code postal sur 5  chiffres" placeholder="code postal"> </br> <br>
             </fieldset>
-        </fieldset>
-            
-            Date livraison:
+        </fieldset> <br> <br> 
+        
+        <fieldset>
+            <legend>Livraison </legend>
+            <fieldset> 
+                <legend>Adresse de livraison (si différente de facturation)</legend>
+               <p> N° de Rue:</p>
+                <input type="number" id="num rue" name="numéro de rue" placeholder="num de rue">
+                <p>Nom de rue:</p>
+                <input type ="text" id="rue" name="rue" placeholder="nom de rue">
+                <p>Ville:</p>
+                <input type="text" id="adresse" name="Ville" placeholder="ville">
+                <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" title="Code postal sur 5  chiffres" placeholder="code postal"> </br> <br>
+            </fieldset> <br>
+            <p>Date livraison:</p>
             <input type="date" id="date livraison" name="date de livraison" > </br>
 
-            <input type="radio" name="sexe" value="homme" checked> Homme
-            <input type="radio" name="sexe" value="femme" checked> Femme
-            <input type="radio" name="sexe" value="non-binaire" checked> Non-binaire <br><br>
+        </fieldset> <br>
+        
+        <input type="text" id="renseignement" placeholder="renseignement"> <br>
+            
             <input type="submit" value="valider">
         
     </form>
